@@ -4,14 +4,14 @@
 //
 //  Created by Lucas Rodrigues on 18/10/24.
 //
-
 import SwiftUI
 
 @main
-struct StockBarApp: App {
+struct MyStockApp: App {
     var body: some Scene {
-        WindowGroup {
+        MenuBarExtra("Stocks", systemImage: "chart.bar") {
             ContentView()
+                .frame(width: 300, height: 400) // Ajuste o tamanho da janela conforme necessário
         }
     }
 }
